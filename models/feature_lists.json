@@ -1,0 +1,26 @@
+{
+ "original7": [
+  "LAT_DD",
+  "LON_DD",
+  "month",
+  "lcond",
+  "PHSTVL",
+  "state",
+  "ECOREGL3"
+ ],
+ "expanded": [
+  "LAT_DD",
+  "LON_DD",
+  "month",
+  "lcond",
+  "PHSTVL",
+  "state",
+  "ECOREGL3",
+  "YEAR",
+  "Temp",
+  "LWSKM2",
+  "NO3",
+  "alk",
+  "HUC"
+ ]
+}

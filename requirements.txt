@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+scikit-learn>=1.5
+matplotlib
+mlflow>=2.14
+cloudpickle
+pytest
+streamlit

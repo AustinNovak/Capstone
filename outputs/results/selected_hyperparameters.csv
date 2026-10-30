@@ -1,0 +1,13 @@
+model,arm,selected_hyperparameters,best_gridsearch_cv_macro_f1,tuning_minutes
+Logistic Regression,"B: original 7, tuned","{'C': 1.0, 'class_weight': 'balanced'}",0.0252,0.58266
+Random Forest,"B: original 7, tuned","{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04672,0.43966
+Gradient Boosting,"B: original 7, tuned","{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.04085,1.03956
+Neural Network,"B: original 7, tuned","{'alpha': 0.01, 'hidden_layer_sizes': [64, 32]}",0.02803,0.3686
+Extra Trees (new),"B: original 7, tuned","{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04187,0.21813
+kNN (new),"B: original 7, tuned","{'n_neighbors': 15, 'weights': 'uniform'}",0.03497,0.22882
+Logistic Regression,"C: expanded, tuned","{'C': 0.1, 'class_weight': 'balanced'}",0.03522,1.00584
+Random Forest,"C: expanded, tuned","{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.05232,0.44119
+Gradient Boosting,"C: expanded, tuned","{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.04532,1.80831
+Neural Network,"C: expanded, tuned","{'alpha': 0.01, 'hidden_layer_sizes': [64]}",0.03807,0.36786
+Extra Trees (new),"C: expanded, tuned","{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04633,0.30479
+kNN (new),"C: expanded, tuned","{'n_neighbors': 15, 'weights': 'uniform'}",0.03608,0.3445

@@ -1,0 +1,13 @@
+file,MB
+tuned_original7_logistic.pkl,0.0
+tuned_expanded_logistic.pkl,0.0
+tuned_original7_random.pkl,177.6
+tuned_expanded_random.pkl,170.2
+tuned_original7_gradient.pkl,3.3
+tuned_expanded_gradient.pkl,3.5
+tuned_original7_neural.pkl,0.1
+tuned_expanded_neural.pkl,0.2
+tuned_original7_extra.pkl,168.8
+tuned_expanded_extra.pkl,167.4
+tuned_original7_knn.pkl,4.6
+tuned_expanded_knn.pkl,11.3

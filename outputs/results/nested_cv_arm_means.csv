@@ -1,0 +1,4 @@
+arm,macro_f1,accuracy,top3
+"A: original 7, fixed",0.0344,0.0716,0.1949
+"B: original 7, tuned",0.0361,0.0716,0.1953
+"C: expanded, tuned",0.0414,0.0763,0.2092

@@ -1,0 +1,20 @@
+model,arm,n_features,best_gridsearch_cv_macro_f1,test_macro_f1,test_accuracy,test_top3,test_roc_auc,test_log_loss
+Logistic Regression,"A: original 7, fixed",7,,0.02821,0.04426,0.12957,0.7572,3.5375
+Random Forest,"A: original 7, fixed",7,,0.04906,0.07119,0.21773,0.79855,3.17997
+Gradient Boosting,"A: original 7, fixed",7,,0.0344,0.05078,0.1565,0.77956,3.44681
+Neural Network,"A: original 7, fixed",7,,0.03115,0.05197,0.14547,0.76747,3.4899
+Extra Trees (new),"A: original 7, fixed",7,,0.04646,0.06443,0.19162,0.79904,3.24155
+kNN (new),"A: original 7, fixed",7,,0.03074,0.15555,0.34468,0.66761,4.5778
+Logistic Regression,"B: original 7, tuned",7,0.0252,0.02821,0.04426,0.12957,0.7572,3.5375
+Random Forest,"B: original 7, tuned",7,0.04672,0.04906,0.07119,0.21773,0.79855,3.17997
+Gradient Boosting,"B: original 7, tuned",7,0.04085,0.04428,0.0579,0.18237,0.7849,3.35412
+Neural Network,"B: original 7, tuned",7,0.02803,0.0273,0.05066,0.13621,0.75998,3.52899
+Extra Trees (new),"B: original 7, tuned",7,0.04187,0.04646,0.06443,0.19162,0.79904,3.24155
+kNN (new),"B: original 7, tuned",7,0.03497,0.03575,0.13894,0.31668,0.62531,6.11963
+Logistic Regression,"C: expanded, tuned",13,0.03522,0.03587,0.05316,0.16315,0.79685,3.41266
+Random Forest,"C: expanded, tuned",13,0.05232,0.05217,0.07511,0.23125,0.81683,3.13008
+Gradient Boosting,"C: expanded, tuned",13,0.04532,0.04957,0.0649,0.20835,0.7989,3.29645
+Neural Network,"C: expanded, tuned",13,0.03807,0.0389,0.06668,0.1915,0.79579,3.33506
+Extra Trees (new),"C: expanded, tuned",13,0.04633,0.04585,0.06609,0.20444,0.81883,3.20169
+kNN (new),"C: expanded, tuned",13,0.03608,0.0359,0.15009,0.32546,0.6452,5.88713
+Baseline: always most common genus,-,0,,0.00444,0.12482,,,

@@ -1,0 +1,91 @@
+fold,model,arm,features,params,inner_cv_macro_f1,macro_f1,accuracy,top3
+1,Logistic Regression,"A: original 7, fixed",7,fixed,,0.026239715454920633,0.04568377336102047,0.12577870068229013
+1,Logistic Regression,"B: original 7, tuned",7,"{'C': 1.0, 'class_weight': 'balanced'}",0.025075719451502776,0.026239715454920633,0.04568377336102047,0.12577870068229013
+1,Logistic Regression,"C: expanded, tuned",11,"{'C': 1.0, 'class_weight': 'balanced'}",0.034246896634536075,0.03542037393774683,0.05235835063779294,0.1547018688816375
+1,Random Forest,"A: original 7, fixed",7,fixed,,0.04430347234816256,0.07000889943636902,0.21165826164342924
+1,Random Forest,"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04594021829482427,0.04430347234816256,0.07000889943636902,0.21165826164342924
+1,Random Forest,"C: expanded, tuned",11,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04927731185886776,0.05335880923918496,0.07549688519727084,0.21862948679916938
+1,Gradient Boosting,"A: original 7, fixed",7,fixed,,0.036215011700573084,0.05250667457727677,0.15084544645505785
+1,Gradient Boosting,"B: original 7, tuned",7,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.04177965253345021,0.038653666082115505,0.05384159003263127,0.17353900919608425
+1,Gradient Boosting,"C: expanded, tuned",11,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.04423391299607597,0.04820239272031145,0.062444378522693564,0.19430436072382082
+1,Neural Network,"A: original 7, fixed",7,fixed,,0.03254124265896243,0.04776030851379413,0.13764461584099674
+1,Neural Network,"B: original 7, tuned",7,"{'alpha': 0.01, 'hidden_layer_sizes': [64, 32]}",0.025397601996874,0.02854817358896551,0.04909522396914862,0.14179768614654406
+1,Neural Network,"C: expanded, tuned",11,"{'alpha': 0.01, 'hidden_layer_sizes': [64]}",0.0341797200500458,0.03168000107550394,0.05532482942746959,0.1606348264609908
+1,Extra Trees (new),"A: original 7, fixed",7,fixed,,0.04258711070336376,0.06274102640166122,0.19074458617620885
+1,Extra Trees (new),"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.042045444643565424,0.04258711070336376,0.06274102640166122,0.19074458617620885
+1,Extra Trees (new),"C: expanded, tuned",11,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.044756031061665195,0.053142993921261386,0.0676357164046277,0.19845743102936814
+1,kNN (new),"A: original 7, fixed",7,fixed,,0.03233518683281715,0.1564817561554435,0.34781963808958766
+1,kNN (new),"B: original 7, tuned",7,"{'n_neighbors': 15, 'weights': 'uniform'}",0.03451388434174033,0.03540888884396186,0.14342924948086622,0.3162266389795313
+1,kNN (new),"C: expanded, tuned",11,"{'n_neighbors': 15, 'weights': 'uniform'}",0.036202835573822534,0.04027181706665553,0.156036784336992,0.32423613171165827
+2,Logistic Regression,"A: original 7, fixed",7,fixed,,0.023228477252295602,0.041685209909508976,0.12742916481234237
+2,Logistic Regression,"B: original 7, tuned",7,"{'C': 1.0, 'class_weight': 'balanced'}",0.025005809000243556,0.023228477252295602,0.041685209909508976,0.12742916481234237
+2,Logistic Regression,"C: expanded, tuned",11,"{'C': 1.0, 'class_weight': 'balanced'}",0.03381962602947699,0.03374613533576708,0.051179350244770806,0.1588785046728972
+2,Random Forest,"A: original 7, fixed",7,fixed,,0.04836643863503103,0.07120605251446373,0.2174751520545913
+2,Random Forest,"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04559732992540185,0.04836643863503103,0.07120605251446373,0.2174751520545913
+2,Random Forest,"C: expanded, tuned",11,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.05050601687817513,0.05532613089127469,0.07521139296840232,0.22518914107699153
+2,Gradient Boosting,"A: original 7, fixed",7,fixed,,0.03497953147634211,0.054294615042278595,0.155318202047174
+2,Gradient Boosting,"B: original 7, tuned",7,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.03900515987731866,0.0414007275385663,0.0621569500074173,0.1909212283044059
+2,Gradient Boosting,"C: expanded, tuned",11,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.04416306585082879,0.04902978230843998,0.06631063640409435,0.19982198486871383
+2,Neural Network,"A: original 7, fixed",7,fixed,,0.024713944052602507,0.049399198931909215,0.14893932650941996
+2,Neural Network,"B: original 7, tuned",7,"{'alpha': 0.0001, 'hidden_layer_sizes': [64, 32]}",0.02828955027099231,0.02776994100685374,0.04984423676012461,0.1487909805666815
+2,Neural Network,"C: expanded, tuned",11,"{'alpha': 0.0001, 'hidden_layer_sizes': [64, 32]}",0.034845669942281485,0.03385148878969945,0.06141522029372497,0.159768580329328
+2,Extra Trees (new),"A: original 7, fixed",7,fixed,,0.04158506736348456,0.062008604064678834,0.19700341195668297
+2,Extra Trees (new),"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.041012382998641995,0.04158506736348456,0.062008604064678834,0.19700341195668297
+2,Extra Trees (new),"C: expanded, tuned",11,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.044516474357289997,0.04712332683959976,0.06586559857587895,0.20308559560896008
+2,kNN (new),"A: original 7, fixed",7,fixed,,0.030023875801368095,0.15220293724966621,0.34683281412253375
+2,kNN (new),"B: original 7, tuned",7,"{'n_neighbors': 15, 'weights': 'uniform'}",0.033471339382094754,0.035613402763717605,0.144488948227266,0.3164218958611482
+2,kNN (new),"C: expanded, tuned",11,"{'n_neighbors': 15, 'weights': 'uniform'}",0.033173636476069114,0.04021515263667963,0.1474558670820353,0.33377837116154874
+3,Logistic Regression,"A: original 7, fixed",7,fixed,,0.02447669683638963,0.04124629080118694,0.12195845697329377
+3,Logistic Regression,"B: original 7, tuned",7,"{'C': 1.0, 'class_weight': 'balanced'}",0.026919864773536778,0.02447669683638963,0.04124629080118694,0.12195845697329377
+3,Logistic Regression,"C: expanded, tuned",9,"{'C': 1.0, 'class_weight': 'balanced'}",0.032267613381625766,0.03772020770507702,0.05445103857566765,0.15786350148367953
+3,Random Forest,"A: original 7, fixed",7,fixed,,0.04734219500537581,0.06899109792284866,0.2166172106824926
+3,Random Forest,"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.043600234039462935,0.04734219500537581,0.06899109792284866,0.2166172106824926
+3,Random Forest,"C: expanded, tuned",9,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04617981367525782,0.05268196994826981,0.07136498516320475,0.22700296735905046
+3,Gradient Boosting,"A: original 7, fixed",7,fixed,,0.03522431141801725,0.05118694362017804,0.14629080118694363
+3,Gradient Boosting,"B: original 7, tuned",7,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.040494913965857034,0.04273667031629083,0.0629080118694362,0.18486646884272998
+3,Gradient Boosting,"C: expanded, tuned",9,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.042304614990119234,0.04575470829064959,0.06261127596439169,0.1937685459940653
+3,Neural Network,"A: original 7, fixed",7,fixed,,0.02308798084562361,0.04376854599406528,0.12863501483679526
+3,Neural Network,"B: original 7, tuned",7,"{'alpha': 0.0001, 'hidden_layer_sizes': [64, 32]}",0.027420750969353713,0.03211465267524599,0.05,0.14777448071216617
+3,Neural Network,"C: expanded, tuned",9,"{'alpha': 0.0001, 'hidden_layer_sizes': [64, 32]}",0.0329608555203066,0.03266579250795002,0.04925816023738872,0.15118694362017804
+3,Extra Trees (new),"A: original 7, fixed",7,fixed,,0.04238764058879081,0.06364985163204748,0.19317507418397625
+3,Extra Trees (new),"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.037636081993681327,0.04238764058879081,0.06364985163204748,0.19317507418397625
+3,Extra Trees (new),"C: expanded, tuned",9,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.041913588326477076,0.0454610524389045,0.06275964391691395,0.20192878338278933
+3,kNN (new),"A: original 7, fixed",7,fixed,,0.028998674247563642,0.15682492581602375,0.34955489614243324
+3,kNN (new),"B: original 7, tuned",7,"{'n_neighbors': 15, 'weights': 'uniform'}",0.033138077055774706,0.03294783002467777,0.14910979228486648,0.31973293768545996
+3,kNN (new),"C: expanded, tuned",9,"{'n_neighbors': 15, 'weights': 'uniform'}",0.03539807423425447,0.03346149758613764,0.1486646884272997,0.32032640949554897
+4,Logistic Regression,"A: original 7, fixed",7,fixed,,0.027453691050072115,0.04494882064975523,0.1290609701824655
+4,Logistic Regression,"B: original 7, tuned",7,"{'C': 1.0, 'class_weight': 'balanced'}",0.025519474202518773,0.027453691050072115,0.04494882064975523,0.1290609701824655
+4,Logistic Regression,"C: expanded, tuned",8,"{'C': 1.0, 'class_weight': 'balanced'}",0.03207506834640624,0.03092008468224023,0.04984423676012461,0.14167037531523513
+4,Random Forest,"A: original 7, fixed",7,fixed,,0.04613240274468413,0.07372793354101766,0.21658507639816052
+4,Random Forest,"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04372566691013585,0.04613240274468413,0.07372793354101766,0.21658507639816052
+4,Random Forest,"C: expanded, tuned",8,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.048664176549524964,0.04966458765526169,0.07595312268209464,0.22949117341640707
+4,Gradient Boosting,"A: original 7, fixed",7,fixed,,0.034581144143819735,0.050734312416555405,0.15413143450526628
+4,Gradient Boosting,"B: original 7, tuned",7,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.03942351271592385,0.0403411941488502,0.059486723038124904,0.17564159620234387
+4,Gradient Boosting,"C: expanded, tuned",8,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.043908761296475585,0.04395043821824606,0.06111852840824803,0.18676754190772882
+4,Neural Network,"A: original 7, fixed",7,fixed,,0.02797450443428335,0.049695890817386144,0.14701082925381992
+4,Neural Network,"B: original 7, tuned",7,"{'alpha': 0.01, 'hidden_layer_sizes': [64, 32]}",0.026896852958193572,0.026877912100027445,0.05281115561489393,0.14389556445631213
+4,Neural Network,"C: expanded, tuned",8,"{'alpha': 0.01, 'hidden_layer_sizes': [64]}",0.029628258706634148,0.028166113946826322,0.05384957721406319,0.15591158581812786
+4,Extra Trees (new),"A: original 7, fixed",7,fixed,,0.04441948636587087,0.06764574988874054,0.20011867675419076
+4,Extra Trees (new),"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.03984924494308942,0.04441948636587087,0.06764574988874054,0.20011867675419076
+4,Extra Trees (new),"C: expanded, tuned",8,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.044375088398975936,0.04424722675837309,0.06794244177421747,0.20412401720812937
+4,kNN (new),"A: original 7, fixed",7,fixed,,0.03441252039545284,0.15858181278742026,0.3492063492063492
+4,kNN (new),"B: original 7, tuned",7,"{'n_neighbors': 15, 'weights': 'uniform'}",0.03328053814827257,0.03535323721862721,0.1479009049102507,0.32087227414330216
+4,kNN (new),"C: expanded, tuned",8,"{'n_neighbors': 15, 'weights': 'uniform'}",0.03530558445852558,0.03682969057945439,0.14938436433763536,0.32547099836819465
+5,Logistic Regression,"A: original 7, fixed",7,fixed,,0.024837224273690953,0.04087677725118483,0.12277843601895734
+5,Logistic Regression,"B: original 7, tuned",7,"{'C': 1.0, 'class_weight': 'balanced'}",0.025748672578178262,0.024837224273690953,0.04087677725118483,0.12277843601895734
+5,Logistic Regression,"C: expanded, tuned",11,"{'C': 0.1, 'class_weight': 'balanced'}",0.03585928095154354,0.03189096634443141,0.05257701421800948,0.15239928909952608
+5,Random Forest,"A: original 7, fixed",7,fixed,,0.04301379985408957,0.0669431279620853,0.20808649289099526
+5,Random Forest,"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04638016639781795,0.04301379985408957,0.0669431279620853,0.20808649289099526
+5,Random Forest,"C: expanded, tuned",11,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04974274705206645,0.050391845510253316,0.07390402843601895,0.22126777251184834
+5,Gradient Boosting,"A: original 7, fixed",7,fixed,,0.03022901310770359,0.0451718009478673,0.1457345971563981
+5,Gradient Boosting,"B: original 7, tuned",7,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.04030330164252517,0.039149016592702084,0.054206161137440756,0.1766883886255924
+5,Gradient Boosting,"C: expanded, tuned",11,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.045490582813285295,0.04254854018682527,0.058056872037914695,0.19135071090047392
+5,Neural Network,"A: original 7, fixed",7,fixed,,0.02683824694711212,0.048430094786729855,0.13225710900473933
+5,Neural Network,"B: original 7, tuned",7,"{'alpha': 0.01, 'hidden_layer_sizes': [64]}",0.026701889463364152,0.02661841810108335,0.04457938388625592,0.12026066350710901
+5,Neural Network,"C: expanded, tuned",11,"{'alpha': 0.0001, 'hidden_layer_sizes': [64]}",0.034133320512037116,0.03398101769125997,0.05479857819905213,0.1667654028436019
+5,Extra Trees (new),"A: original 7, fixed",7,fixed,,0.04206584859655552,0.061167061611374404,0.1864632701421801
+5,Extra Trees (new),"B: original 7, tuned",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.040901103898428666,0.04206584859655552,0.061167061611374404,0.1864632701421801
+5,Extra Trees (new),"C: expanded, tuned",11,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04498013884406667,0.04388014395297053,0.06457345971563981,0.19816350710900474
+5,kNN (new),"A: original 7, fixed",7,fixed,,0.029989660690434187,0.1494372037914692,0.3427132701421801
+5,kNN (new),"B: original 7, tuned",7,"{'n_neighbors': 15, 'weights': 'uniform'}",0.03510331597256394,0.03051567844170734,0.14099526066350712,0.3166469194312796
+5,kNN (new),"C: expanded, tuned",11,"{'n_neighbors': 15, 'weights': 'uniform'}",0.036173168088868515,0.03565773510857027,0.14025473933649288,0.3190165876777251

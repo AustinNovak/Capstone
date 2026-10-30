@@ -1,0 +1,1319 @@
+{
+ "dataset": {
+  "rows": 42144,
+  "sites": 3278,
+  "genera": 50,
+  "n_candidates": 27
+ },
+ "imbalance_ratio": 159.21212121212122,
+ "shap_share": {
+  "Logistic Regression": {
+   "LAT_DD": 18.17,
+   "LON_DD": 25.21,
+   "month": 4.01,
+   "lcond": 7.16,
+   "PHSTVL": 7.0,
+   "state": 19.05,
+   "ECOREGL3": 19.4
+  },
+  "Random Forest": {
+   "LAT_DD": 16.64,
+   "LON_DD": 22.19,
+   "month": 7.4,
+   "lcond": 12.82,
+   "PHSTVL": 10.38,
+   "state": 15.29,
+   "ECOREGL3": 15.28
+  },
+  "Gradient Boosting": {
+   "LAT_DD": 20.05,
+   "LON_DD": 33.43,
+   "month": 5.04,
+   "lcond": 14.05,
+   "PHSTVL": 10.28,
+   "state": 8.97,
+   "ECOREGL3": 8.17
+  },
+  "Neural Network": {
+   "LAT_DD": 17.03,
+   "LON_DD": 25.77,
+   "month": 5.78,
+   "lcond": 12.41,
+   "PHSTVL": 10.82,
+   "state": 12.6,
+   "ECOREGL3": 15.58
+  }
+ },
+ "stability": [
+  {
+   "feature": "LWSKM2",
+   "selected_by_RFE": 5,
+   "passed_permutation": 5,
+   "proposed_addition": 5,
+   "mean_perm_drop_macroF1": 0.00286,
+   "mean_perm_drop_top3": 0.00707,
+   "original7": false
+  },
+  {
+   "feature": "HUC",
+   "selected_by_RFE": 4,
+   "passed_permutation": 4,
+   "proposed_addition": 4,
+   "mean_perm_drop_macroF1": 0.00196,
+   "mean_perm_drop_top3": 0.00282,
+   "original7": false
+  },
+  {
+   "feature": "Temp",
+   "selected_by_RFE": 4,
+   "passed_permutation": 3,
+   "proposed_addition": 3,
+   "mean_perm_drop_macroF1": 0.00085,
+   "mean_perm_drop_top3": 0.0017,
+   "original7": false
+  },
+  {
+   "feature": "YEAR",
+   "selected_by_RFE": 4,
+   "passed_permutation": 3,
+   "proposed_addition": 2,
+   "mean_perm_drop_macroF1": 0.00066,
+   "mean_perm_drop_top3": 0.0027,
+   "original7": false
+  },
+  {
+   "feature": "tn",
+   "selected_by_RFE": 1,
+   "passed_permutation": 1,
+   "proposed_addition": 1,
+   "mean_perm_drop_macroF1": -0.00013,
+   "mean_perm_drop_top3": 6e-05,
+   "original7": false
+  },
+  {
+   "feature": "ECOREGL3",
+   "selected_by_RFE": 0,
+   "passed_permutation": 5,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00285,
+   "mean_perm_drop_top3": 0.00627,
+   "original7": true
+  },
+  {
+   "feature": "LAT_DD",
+   "selected_by_RFE": 5,
+   "passed_permutation": 5,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00252,
+   "mean_perm_drop_top3": 0.01059,
+   "original7": true
+  },
+  {
+   "feature": "lcond",
+   "selected_by_RFE": 5,
+   "passed_permutation": 4,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00123,
+   "mean_perm_drop_top3": 0.00763,
+   "original7": true
+  },
+  {
+   "feature": "ratio",
+   "selected_by_RFE": 0,
+   "passed_permutation": 4,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.0011,
+   "mean_perm_drop_top3": 0.00043,
+   "original7": false
+  },
+  {
+   "feature": "hardness",
+   "selected_by_RFE": 0,
+   "passed_permutation": 3,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00146,
+   "mean_perm_drop_top3": 0.00183,
+   "original7": false
+  },
+  {
+   "feature": "NO3",
+   "selected_by_RFE": 2,
+   "passed_permutation": 3,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00117,
+   "mean_perm_drop_top3": 0.00558,
+   "original7": false
+  },
+  {
+   "feature": "LON_DD",
+   "selected_by_RFE": 5,
+   "passed_permutation": 2,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00198,
+   "mean_perm_drop_top3": 0.00281,
+   "original7": true
+  },
+  {
+   "feature": "PHSTVL",
+   "selected_by_RFE": 5,
+   "passed_permutation": 2,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.0004,
+   "mean_perm_drop_top3": 0.0038,
+   "original7": true
+  },
+  {
+   "feature": "rbpscore",
+   "selected_by_RFE": 0,
+   "passed_permutation": 2,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00027,
+   "mean_perm_drop_top3": 0.00135,
+   "original7": false
+  },
+  {
+   "feature": "alk",
+   "selected_by_RFE": 0,
+   "passed_permutation": 2,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00018,
+   "mean_perm_drop_top3": 0.00124,
+   "original7": false
+  },
+  {
+   "feature": "month",
+   "selected_by_RFE": 2,
+   "passed_permutation": 1,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00061,
+   "mean_perm_drop_top3": 0.00061,
+   "original7": true
+  },
+  {
+   "feature": "SO4HCO3",
+   "selected_by_RFE": 0,
+   "passed_permutation": 1,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00057,
+   "mean_perm_drop_top3": 0.00069,
+   "original7": false
+  },
+  {
+   "feature": "do",
+   "selected_by_RFE": 0,
+   "passed_permutation": 1,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00021,
+   "mean_perm_drop_top3": 0.001,
+   "original7": false
+  },
+  {
+   "feature": "state",
+   "selected_by_RFE": 0,
+   "passed_permutation": 1,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00019,
+   "mean_perm_drop_top3": 0.00351,
+   "original7": true
+  },
+  {
+   "feature": "SO4",
+   "selected_by_RFE": 0,
+   "passed_permutation": 1,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": -0.00014,
+   "mean_perm_drop_top3": 1e-05,
+   "original7": false
+  },
+  {
+   "feature": "mg",
+   "selected_by_RFE": 0,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00019,
+   "mean_perm_drop_top3": -9e-05,
+   "original7": false
+  },
+  {
+   "feature": "CL",
+   "selected_by_RFE": 4,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": 0.00017,
+   "mean_perm_drop_top3": 0.00053,
+   "original7": false
+  },
+  {
+   "feature": "Dataset",
+   "selected_by_RFE": 0,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": -3e-05,
+   "mean_perm_drop_top3": 0.00059,
+   "original7": false
+  },
+  {
+   "feature": "na",
+   "selected_by_RFE": 0,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": -0.00016,
+   "mean_perm_drop_top3": -0.0002,
+   "original7": false
+  },
+  {
+   "feature": "CA",
+   "selected_by_RFE": 1,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": -0.00026,
+   "mean_perm_drop_top3": 0.00079,
+   "original7": false
+  },
+  {
+   "feature": "TP",
+   "selected_by_RFE": 0,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": -0.00034,
+   "mean_perm_drop_top3": -0.00015,
+   "original7": false
+  },
+  {
+   "feature": "k",
+   "selected_by_RFE": 0,
+   "passed_permutation": 0,
+   "proposed_addition": 0,
+   "mean_perm_drop_macroF1": -0.00036,
+   "mean_perm_drop_top3": -9e-05,
+   "original7": false
+  }
+ ],
+ "nested_summary": [
+  {
+   "model": "Extra Trees (new)",
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.0426,
+   "accuracy": 0.0634,
+   "top3": 0.1935,
+   "inner_cv_macro_f1": NaN,
+   "macro_f1_sd": 0.0011
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.0426,
+   "accuracy": 0.0634,
+   "top3": 0.1935,
+   "inner_cv_macro_f1": 0.0403,
+   "macro_f1_sd": 0.0011
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0468,
+   "accuracy": 0.0658,
+   "top3": 0.2012,
+   "inner_cv_macro_f1": 0.0441,
+   "macro_f1_sd": 0.0038
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.0342,
+   "accuracy": 0.0508,
+   "top3": 0.1505,
+   "inner_cv_macro_f1": NaN,
+   "macro_f1_sd": 0.0023
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.0405,
+   "accuracy": 0.0585,
+   "top3": 0.1803,
+   "inner_cv_macro_f1": 0.0402,
+   "macro_f1_sd": 0.0017
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0459,
+   "accuracy": 0.0621,
+   "top3": 0.1932,
+   "inner_cv_macro_f1": 0.044,
+   "macro_f1_sd": 0.0027
+  },
+  {
+   "model": "Logistic Regression",
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.0252,
+   "accuracy": 0.0429,
+   "top3": 0.1254,
+   "inner_cv_macro_f1": NaN,
+   "macro_f1_sd": 0.0016
+  },
+  {
+   "model": "Logistic Regression",
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.0252,
+   "accuracy": 0.0429,
+   "top3": 0.1254,
+   "inner_cv_macro_f1": 0.0257,
+   "macro_f1_sd": 0.0016
+  },
+  {
+   "model": "Logistic Regression",
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0339,
+   "accuracy": 0.0521,
+   "top3": 0.1531,
+   "inner_cv_macro_f1": 0.0337,
+   "macro_f1_sd": 0.0027
+  },
+  {
+   "model": "Neural Network",
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.027,
+   "accuracy": 0.0478,
+   "top3": 0.1389,
+   "inner_cv_macro_f1": NaN,
+   "macro_f1_sd": 0.0036
+  },
+  {
+   "model": "Neural Network",
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.0284,
+   "accuracy": 0.0493,
+   "top3": 0.1405,
+   "inner_cv_macro_f1": 0.0269,
+   "macro_f1_sd": 0.0022
+  },
+  {
+   "model": "Neural Network",
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0321,
+   "accuracy": 0.0549,
+   "top3": 0.1589,
+   "inner_cv_macro_f1": 0.0331,
+   "macro_f1_sd": 0.0024
+  },
+  {
+   "model": "Random Forest",
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.0458,
+   "accuracy": 0.0702,
+   "top3": 0.2141,
+   "inner_cv_macro_f1": NaN,
+   "macro_f1_sd": 0.0022
+  },
+  {
+   "model": "Random Forest",
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.0458,
+   "accuracy": 0.0702,
+   "top3": 0.2141,
+   "inner_cv_macro_f1": 0.045,
+   "macro_f1_sd": 0.0022
+  },
+  {
+   "model": "Random Forest",
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0523,
+   "accuracy": 0.0744,
+   "top3": 0.2243,
+   "inner_cv_macro_f1": 0.0489,
+   "macro_f1_sd": 0.0023
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.0312,
+   "accuracy": 0.1547,
+   "top3": 0.3472,
+   "inner_cv_macro_f1": NaN,
+   "macro_f1_sd": 0.0022
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.034,
+   "accuracy": 0.1452,
+   "top3": 0.318,
+   "inner_cv_macro_f1": 0.0339,
+   "macro_f1_sd": 0.0022
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0373,
+   "accuracy": 0.1484,
+   "top3": 0.3246,
+   "inner_cv_macro_f1": 0.0353,
+   "macro_f1_sd": 0.003
+  }
+ ],
+ "nested_arm_means": [
+  {
+   "arm": "A: original 7, fixed",
+   "macro_f1": 0.0344,
+   "accuracy": 0.0716,
+   "top3": 0.1949
+  },
+  {
+   "arm": "B: original 7, tuned",
+   "macro_f1": 0.0361,
+   "accuracy": 0.0716,
+   "top3": 0.1953
+  },
+  {
+   "arm": "C: expanded, tuned",
+   "macro_f1": 0.0414,
+   "accuracy": 0.0763,
+   "top3": 0.2092
+  }
+ ],
+ "nested_effects": [
+  {
+   "comparison": "tuning effect (B - A)",
+   "metric": "macro_f1",
+   "mean_diff": 0.0017301520230239011,
+   "sd": 0.003173269169730532,
+   "n_pairs": 30,
+   "wins": 12,
+   "p_value": 0.005689819190760651
+  },
+  {
+   "comparison": "tuning effect (B - A)",
+   "metric": "accuracy",
+   "mean_diff": -5.4114318861119695e-05,
+   "sd": 0.005568406017740318,
+   "n_pairs": 30,
+   "wins": 9,
+   "p_value": 0.9579150599306573
+  },
+  {
+   "comparison": "tuning effect (B - A)",
+   "metric": "top3",
+   "mean_diff": 0.000371412938699849,
+   "sd": 0.018117542622264855,
+   "n_pairs": 30,
+   "wins": 7,
+   "p_value": 0.9113717556086988
+  },
+  {
+   "comparison": "feature effect (C - B)",
+   "metric": "macro_f1",
+   "mean_diff": 0.005291778245255185,
+   "sd": 0.003385840351421159,
+   "n_pairs": 30,
+   "wins": 29,
+   "p_value": 1.980401543077027e-09
+  },
+  {
+   "comparison": "feature effect (C - B)",
+   "metric": "accuracy",
+   "mean_diff": 0.004690596555665257,
+   "sd": 0.004253516736006303,
+   "n_pairs": 30,
+   "wins": 25,
+   "p_value": 1.4271307254900005e-06
+  },
+  {
+   "comparison": "feature effect (C - B)",
+   "metric": "top3",
+   "mean_diff": 0.01389842408744838,
+   "sd": 0.010753569499022163,
+   "n_pairs": 30,
+   "wins": 30,
+   "p_value": 8.681063494808503e-08
+  },
+  {
+   "comparison": "total (C - A)",
+   "metric": "macro_f1",
+   "mean_diff": 0.0070219302682790865,
+   "sd": 0.004055163115931288,
+   "n_pairs": 30,
+   "wins": 28,
+   "p_value": 2.163073883473357e-10
+  },
+  {
+   "comparison": "total (C - A)",
+   "metric": "accuracy",
+   "mean_diff": 0.004636482236804139,
+   "sd": 0.00637026239937264,
+   "n_pairs": 30,
+   "wins": 24,
+   "p_value": 0.0004149956645277453
+  },
+  {
+   "comparison": "total (C - A)",
+   "metric": "top3",
+   "mean_diff": 0.01426983702614823,
+   "sd": 0.02143495595251402,
+   "n_pairs": 30,
+   "wins": 25,
+   "p_value": 0.0010353616102946827
+  }
+ ],
+ "final_selection": {
+  "additions": [
+   "YEAR",
+   "Temp",
+   "LWSKM2",
+   "NO3",
+   "alk",
+   "HUC"
+  ],
+  "rfe_set": [
+   "LAT_DD",
+   "LON_DD",
+   "month",
+   "lcond",
+   "PHSTVL",
+   "YEAR",
+   "Temp",
+   "LWSKM2",
+   "CA",
+   "NO3",
+   "CL",
+   "alk",
+   "HUC"
+  ],
+  "perm_set": [
+   "LAT_DD",
+   "LON_DD",
+   "lcond",
+   "state",
+   "ECOREGL3",
+   "YEAR",
+   "Temp",
+   "LWSKM2",
+   "NO3",
+   "alk",
+   "hardness",
+   "HUC"
+  ]
+ },
+ "test": [
+  {
+   "model": "Logistic Regression",
+   "arm": "A: original 7, fixed",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.02821,
+   "test_accuracy": 0.04426,
+   "test_top3": 0.12957,
+   "test_roc_auc": 0.7572,
+   "test_log_loss": 3.5375
+  },
+  {
+   "model": "Random Forest",
+   "arm": "A: original 7, fixed",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.04906,
+   "test_accuracy": 0.07119,
+   "test_top3": 0.21773,
+   "test_roc_auc": 0.79855,
+   "test_log_loss": 3.17997
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "A: original 7, fixed",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.0344,
+   "test_accuracy": 0.05078,
+   "test_top3": 0.1565,
+   "test_roc_auc": 0.77956,
+   "test_log_loss": 3.44681
+  },
+  {
+   "model": "Neural Network",
+   "arm": "A: original 7, fixed",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.03115,
+   "test_accuracy": 0.05197,
+   "test_top3": 0.14547,
+   "test_roc_auc": 0.76747,
+   "test_log_loss": 3.4899
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "A: original 7, fixed",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.04646,
+   "test_accuracy": 0.06443,
+   "test_top3": 0.19162,
+   "test_roc_auc": 0.79904,
+   "test_log_loss": 3.24155
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "A: original 7, fixed",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.03074,
+   "test_accuracy": 0.15555,
+   "test_top3": 0.34468,
+   "test_roc_auc": 0.66761,
+   "test_log_loss": 4.5778
+  },
+  {
+   "model": "Logistic Regression",
+   "arm": "B: original 7, tuned",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": 0.0252,
+   "test_macro_f1": 0.02821,
+   "test_accuracy": 0.04426,
+   "test_top3": 0.12957,
+   "test_roc_auc": 0.7572,
+   "test_log_loss": 3.5375
+  },
+  {
+   "model": "Random Forest",
+   "arm": "B: original 7, tuned",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": 0.04672,
+   "test_macro_f1": 0.04906,
+   "test_accuracy": 0.07119,
+   "test_top3": 0.21773,
+   "test_roc_auc": 0.79855,
+   "test_log_loss": 3.17997
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "B: original 7, tuned",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": 0.04085,
+   "test_macro_f1": 0.04428,
+   "test_accuracy": 0.0579,
+   "test_top3": 0.18237,
+   "test_roc_auc": 0.7849,
+   "test_log_loss": 3.35412
+  },
+  {
+   "model": "Neural Network",
+   "arm": "B: original 7, tuned",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": 0.02803,
+   "test_macro_f1": 0.0273,
+   "test_accuracy": 0.05066,
+   "test_top3": 0.13621,
+   "test_roc_auc": 0.75998,
+   "test_log_loss": 3.52899
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "B: original 7, tuned",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": 0.04187,
+   "test_macro_f1": 0.04646,
+   "test_accuracy": 0.06443,
+   "test_top3": 0.19162,
+   "test_roc_auc": 0.79904,
+   "test_log_loss": 3.24155
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "B: original 7, tuned",
+   "n_features": 7,
+   "best_gridsearch_cv_macro_f1": 0.03497,
+   "test_macro_f1": 0.03575,
+   "test_accuracy": 0.13894,
+   "test_top3": 0.31668,
+   "test_roc_auc": 0.62531,
+   "test_log_loss": 6.11963
+  },
+  {
+   "model": "Logistic Regression",
+   "arm": "C: expanded, tuned",
+   "n_features": 13,
+   "best_gridsearch_cv_macro_f1": 0.03522,
+   "test_macro_f1": 0.03587,
+   "test_accuracy": 0.05316,
+   "test_top3": 0.16315,
+   "test_roc_auc": 0.79685,
+   "test_log_loss": 3.41266
+  },
+  {
+   "model": "Random Forest",
+   "arm": "C: expanded, tuned",
+   "n_features": 13,
+   "best_gridsearch_cv_macro_f1": 0.05232,
+   "test_macro_f1": 0.05217,
+   "test_accuracy": 0.07511,
+   "test_top3": 0.23125,
+   "test_roc_auc": 0.81683,
+   "test_log_loss": 3.13008
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "C: expanded, tuned",
+   "n_features": 13,
+   "best_gridsearch_cv_macro_f1": 0.04532,
+   "test_macro_f1": 0.04957,
+   "test_accuracy": 0.0649,
+   "test_top3": 0.20835,
+   "test_roc_auc": 0.7989,
+   "test_log_loss": 3.29645
+  },
+  {
+   "model": "Neural Network",
+   "arm": "C: expanded, tuned",
+   "n_features": 13,
+   "best_gridsearch_cv_macro_f1": 0.03807,
+   "test_macro_f1": 0.0389,
+   "test_accuracy": 0.06668,
+   "test_top3": 0.1915,
+   "test_roc_auc": 0.79579,
+   "test_log_loss": 3.33506
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "C: expanded, tuned",
+   "n_features": 13,
+   "best_gridsearch_cv_macro_f1": 0.04633,
+   "test_macro_f1": 0.04585,
+   "test_accuracy": 0.06609,
+   "test_top3": 0.20444,
+   "test_roc_auc": 0.81883,
+   "test_log_loss": 3.20169
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "C: expanded, tuned",
+   "n_features": 13,
+   "best_gridsearch_cv_macro_f1": 0.03608,
+   "test_macro_f1": 0.0359,
+   "test_accuracy": 0.15009,
+   "test_top3": 0.32546,
+   "test_roc_auc": 0.6452,
+   "test_log_loss": 5.88713
+  },
+  {
+   "model": "Baseline: always most common genus",
+   "arm": "-",
+   "n_features": 0,
+   "best_gridsearch_cv_macro_f1": NaN,
+   "test_macro_f1": 0.00444,
+   "test_accuracy": 0.12482,
+   "test_top3": NaN,
+   "test_roc_auc": NaN,
+   "test_log_loss": NaN
+  }
+ ],
+ "hyper": [
+  {
+   "model": "Logistic Regression",
+   "arm": "B: original 7, tuned",
+   "selected_hyperparameters": "{'C': 1.0, 'class_weight': 'balanced'}",
+   "best_gridsearch_cv_macro_f1": 0.0252,
+   "tuning_minutes": 0.58266
+  },
+  {
+   "model": "Random Forest",
+   "arm": "B: original 7, tuned",
+   "selected_hyperparameters": "{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",
+   "best_gridsearch_cv_macro_f1": 0.04672,
+   "tuning_minutes": 0.43966
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "B: original 7, tuned",
+   "selected_hyperparameters": "{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",
+   "best_gridsearch_cv_macro_f1": 0.04085,
+   "tuning_minutes": 1.03956
+  },
+  {
+   "model": "Neural Network",
+   "arm": "B: original 7, tuned",
+   "selected_hyperparameters": "{'alpha': 0.01, 'hidden_layer_sizes': [64, 32]}",
+   "best_gridsearch_cv_macro_f1": 0.02803,
+   "tuning_minutes": 0.3686
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "B: original 7, tuned",
+   "selected_hyperparameters": "{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",
+   "best_gridsearch_cv_macro_f1": 0.04187,
+   "tuning_minutes": 0.21813
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "B: original 7, tuned",
+   "selected_hyperparameters": "{'n_neighbors': 15, 'weights': 'uniform'}",
+   "best_gridsearch_cv_macro_f1": 0.03497,
+   "tuning_minutes": 0.22882
+  },
+  {
+   "model": "Logistic Regression",
+   "arm": "C: expanded, tuned",
+   "selected_hyperparameters": "{'C': 0.1, 'class_weight': 'balanced'}",
+   "best_gridsearch_cv_macro_f1": 0.03522,
+   "tuning_minutes": 1.00584
+  },
+  {
+   "model": "Random Forest",
+   "arm": "C: expanded, tuned",
+   "selected_hyperparameters": "{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",
+   "best_gridsearch_cv_macro_f1": 0.05232,
+   "tuning_minutes": 0.44119
+  },
+  {
+   "model": "Gradient Boosting",
+   "arm": "C: expanded, tuned",
+   "selected_hyperparameters": "{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",
+   "best_gridsearch_cv_macro_f1": 0.04532,
+   "tuning_minutes": 1.80831
+  },
+  {
+   "model": "Neural Network",
+   "arm": "C: expanded, tuned",
+   "selected_hyperparameters": "{'alpha': 0.01, 'hidden_layer_sizes': [64]}",
+   "best_gridsearch_cv_macro_f1": 0.03807,
+   "tuning_minutes": 0.36786
+  },
+  {
+   "model": "Extra Trees (new)",
+   "arm": "C: expanded, tuned",
+   "selected_hyperparameters": "{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",
+   "best_gridsearch_cv_macro_f1": 0.04633,
+   "tuning_minutes": 0.30479
+  },
+  {
+   "model": "kNN (new)",
+   "arm": "C: expanded, tuned",
+   "selected_hyperparameters": "{'n_neighbors': 15, 'weights': 'uniform'}",
+   "best_gridsearch_cv_macro_f1": 0.03608,
+   "tuning_minutes": 0.3445
+  }
+ ],
+ "boot": [
+  {
+   "model": "Logistic Regression",
+   "comparison": "tuning (B - A)",
+   "metric": "macro_f1",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Logistic Regression",
+   "comparison": "tuning (B - A)",
+   "metric": "accuracy",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Logistic Regression",
+   "comparison": "tuning (B - A)",
+   "metric": "top3",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Logistic Regression",
+   "comparison": "added features (C - B)",
+   "metric": "macro_f1",
+   "diff": 0.00739,
+   "ci_low": 0.00312,
+   "ci_high": 0.01144,
+   "excludes_zero": true
+  },
+  {
+   "model": "Logistic Regression",
+   "comparison": "added features (C - B)",
+   "metric": "accuracy",
+   "diff": 0.00906,
+   "ci_low": 0.00351,
+   "ci_high": 0.01446,
+   "excludes_zero": true
+  },
+  {
+   "model": "Logistic Regression",
+   "comparison": "added features (C - B)",
+   "metric": "top3",
+   "diff": 0.03338,
+   "ci_low": 0.02461,
+   "ci_high": 0.04427,
+   "excludes_zero": true
+  },
+  {
+   "model": "Random Forest",
+   "comparison": "tuning (B - A)",
+   "metric": "macro_f1",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Random Forest",
+   "comparison": "tuning (B - A)",
+   "metric": "accuracy",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Random Forest",
+   "comparison": "tuning (B - A)",
+   "metric": "top3",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Random Forest",
+   "comparison": "added features (C - B)",
+   "metric": "macro_f1",
+   "diff": 0.00265,
+   "ci_low": -0.00181,
+   "ci_high": 0.00716,
+   "excludes_zero": false
+  },
+  {
+   "model": "Random Forest",
+   "comparison": "added features (C - B)",
+   "metric": "accuracy",
+   "diff": 0.00386,
+   "ci_low": 0.00011,
+   "ci_high": 0.00822,
+   "excludes_zero": true
+  },
+  {
+   "model": "Random Forest",
+   "comparison": "added features (C - B)",
+   "metric": "top3",
+   "diff": 0.01389,
+   "ci_low": 0.00618,
+   "ci_high": 0.02144,
+   "excludes_zero": true
+  },
+  {
+   "model": "Gradient Boosting",
+   "comparison": "tuning (B - A)",
+   "metric": "macro_f1",
+   "diff": 0.0099,
+   "ci_low": 0.00639,
+   "ci_high": 0.01386,
+   "excludes_zero": true
+  },
+  {
+   "model": "Gradient Boosting",
+   "comparison": "tuning (B - A)",
+   "metric": "accuracy",
+   "diff": 0.00728,
+   "ci_low": 0.00279,
+   "ci_high": 0.01199,
+   "excludes_zero": true
+  },
+  {
+   "model": "Gradient Boosting",
+   "comparison": "tuning (B - A)",
+   "metric": "top3",
+   "diff": 0.02596,
+   "ci_low": 0.01951,
+   "ci_high": 0.03317,
+   "excludes_zero": true
+  },
+  {
+   "model": "Gradient Boosting",
+   "comparison": "added features (C - B)",
+   "metric": "macro_f1",
+   "diff": 0.00469,
+   "ci_low": 0.00023,
+   "ci_high": 0.00917,
+   "excludes_zero": true
+  },
+  {
+   "model": "Gradient Boosting",
+   "comparison": "added features (C - B)",
+   "metric": "accuracy",
+   "diff": 0.00693,
+   "ci_low": 0.00261,
+   "ci_high": 0.01197,
+   "excludes_zero": true
+  },
+  {
+   "model": "Gradient Boosting",
+   "comparison": "added features (C - B)",
+   "metric": "top3",
+   "diff": 0.02624,
+   "ci_low": 0.01868,
+   "ci_high": 0.03402,
+   "excludes_zero": true
+  },
+  {
+   "model": "Neural Network",
+   "comparison": "tuning (B - A)",
+   "metric": "macro_f1",
+   "diff": -0.00346,
+   "ci_low": -0.007,
+   "ci_high": 0.00062,
+   "excludes_zero": false
+  },
+  {
+   "model": "Neural Network",
+   "comparison": "tuning (B - A)",
+   "metric": "accuracy",
+   "diff": -0.00102,
+   "ci_low": -0.00477,
+   "ci_high": 0.00268,
+   "excludes_zero": false
+  },
+  {
+   "model": "Neural Network",
+   "comparison": "tuning (B - A)",
+   "metric": "top3",
+   "diff": -0.00951,
+   "ci_low": -0.01436,
+   "ci_high": -0.0026,
+   "excludes_zero": true
+  },
+  {
+   "model": "Neural Network",
+   "comparison": "added features (C - B)",
+   "metric": "macro_f1",
+   "diff": 0.01057,
+   "ci_low": 0.00666,
+   "ci_high": 0.01485,
+   "excludes_zero": true
+  },
+  {
+   "model": "Neural Network",
+   "comparison": "added features (C - B)",
+   "metric": "accuracy",
+   "diff": 0.01606,
+   "ci_low": 0.01052,
+   "ci_high": 0.02206,
+   "excludes_zero": true
+  },
+  {
+   "model": "Neural Network",
+   "comparison": "added features (C - B)",
+   "metric": "top3",
+   "diff": 0.0551,
+   "ci_low": 0.04283,
+   "ci_high": 0.0704,
+   "excludes_zero": true
+  },
+  {
+   "model": "Extra Trees (new)",
+   "comparison": "tuning (B - A)",
+   "metric": "macro_f1",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Extra Trees (new)",
+   "comparison": "tuning (B - A)",
+   "metric": "accuracy",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Extra Trees (new)",
+   "comparison": "tuning (B - A)",
+   "metric": "top3",
+   "diff": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.0,
+   "excludes_zero": false
+  },
+  {
+   "model": "Extra Trees (new)",
+   "comparison": "added features (C - B)",
+   "metric": "macro_f1",
+   "diff": -0.00071,
+   "ci_low": -0.00496,
+   "ci_high": 0.00321,
+   "excludes_zero": false
+  },
+  {
+   "model": "Extra Trees (new)",
+   "comparison": "added features (C - B)",
+   "metric": "accuracy",
+   "diff": 0.00165,
+   "ci_low": -0.00175,
+   "ci_high": 0.00522,
+   "excludes_zero": false
+  },
+  {
+   "model": "Extra Trees (new)",
+   "comparison": "added features (C - B)",
+   "metric": "top3",
+   "diff": 0.01265,
+   "ci_low": 0.00656,
+   "ci_high": 0.01894,
+   "excludes_zero": true
+  },
+  {
+   "model": "kNN (new)",
+   "comparison": "tuning (B - A)",
+   "metric": "macro_f1",
+   "diff": 0.005,
+   "ci_low": 0.00225,
+   "ci_high": 0.00792,
+   "excludes_zero": true
+  },
+  {
+   "model": "kNN (new)",
+   "comparison": "tuning (B - A)",
+   "metric": "accuracy",
+   "diff": -0.01656,
+   "ci_low": -0.02055,
+   "ci_high": -0.01159,
+   "excludes_zero": true
+  },
+  {
+   "model": "kNN (new)",
+   "comparison": "tuning (B - A)",
+   "metric": "top3",
+   "diff": -0.02792,
+   "ci_low": -0.03619,
+   "ci_high": -0.0195,
+   "excludes_zero": true
+  },
+  {
+   "model": "kNN (new)",
+   "comparison": "added features (C - B)",
+   "metric": "macro_f1",
+   "diff": -0.00044,
+   "ci_low": -0.00409,
+   "ci_high": 0.00273,
+   "excludes_zero": false
+  },
+  {
+   "model": "kNN (new)",
+   "comparison": "added features (C - B)",
+   "metric": "accuracy",
+   "diff": 0.01094,
+   "ci_low": 0.00476,
+   "ci_high": 0.0182,
+   "excludes_zero": true
+  },
+  {
+   "model": "kNN (new)",
+   "comparison": "added features (C - B)",
+   "metric": "top3",
+   "diff": 0.00919,
+   "ci_low": -0.00012,
+   "ci_high": 0.0189,
+   "excludes_zero": false
+  }
+ ],
+ "drop_one": [
+  {
+   "variant": "all expanded",
+   "macro_f1": 0.0534,
+   "accuracy": 0.0748,
+   "top3": 0.2257
+  },
+  {
+   "variant": "without HUC",
+   "macro_f1": 0.0525,
+   "accuracy": 0.0766,
+   "top3": 0.2257
+  },
+  {
+   "variant": "without alk",
+   "macro_f1": 0.0522,
+   "accuracy": 0.075,
+   "top3": 0.2239
+  },
+  {
+   "variant": "without NO3",
+   "macro_f1": 0.052,
+   "accuracy": 0.0739,
+   "top3": 0.2243
+  },
+  {
+   "variant": "without YEAR",
+   "macro_f1": 0.0519,
+   "accuracy": 0.0742,
+   "top3": 0.2243
+  },
+  {
+   "variant": "without Temp",
+   "macro_f1": 0.0513,
+   "accuracy": 0.0725,
+   "top3": 0.2223
+  },
+  {
+   "variant": "without LWSKM2",
+   "macro_f1": 0.0489,
+   "accuracy": 0.0713,
+   "top3": 0.2175
+  },
+  {
+   "variant": "original 7 only",
+   "macro_f1": 0.0458,
+   "accuracy": 0.0702,
+   "top3": 0.2141
+  }
+ ],
+ "shap_share_expanded": {
+  "LWSKM2": 14.571,
+  "HUC": 14.163,
+  "LON_DD": 10.3,
+  "ECOREGL3": 9.559,
+  "state": 9.222,
+  "LAT_DD": 8.104,
+  "NO3": 6.285,
+  "lcond": 6.083,
+  "Temp": 5.348,
+  "PHSTVL": 4.954,
+  "YEAR": 4.7,
+  "alk": 3.511,
+  "month": 3.199
+ },
+ "original7": [
+  "LAT_DD",
+  "LON_DD",
+  "month",
+  "lcond",
+  "PHSTVL",
+  "state",
+  "ECOREGL3"
+ ],
+ "expanded": [
+  "LAT_DD",
+  "LON_DD",
+  "month",
+  "lcond",
+  "PHSTVL",
+  "state",
+  "ECOREGL3",
+  "YEAR",
+  "Temp",
+  "LWSKM2",
+  "NO3",
+  "alk",
+  "HUC"
+ ],
+ "additions": [
+  "YEAR",
+  "Temp",
+  "LWSKM2",
+  "NO3",
+  "alk",
+  "HUC"
+ ],
+ "n_outer": 5
+}

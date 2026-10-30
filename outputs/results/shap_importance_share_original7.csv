@@ -1,0 +1,8 @@
+,Logistic Regression,Random Forest,Gradient Boosting,Neural Network
+LAT_DD,18.17,16.64,20.05,17.03
+LON_DD,25.21,22.19,33.43,25.77
+month,4.01,7.4,5.04,5.78
+lcond,7.16,12.82,14.05,12.41
+PHSTVL,7.0,10.38,10.28,10.82
+state,19.05,15.29,8.97,12.6
+ECOREGL3,19.4,15.28,8.17,15.58

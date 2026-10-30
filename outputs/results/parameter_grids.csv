@@ -1,0 +1,22 @@
+model,existing_model,parameter,values,combinations,inner_cv_fits
+Logistic Regression,True,C,"[0.1, 1.0]",4,20
+Logistic Regression,True,class_weight,"[None, 'balanced']",4,20
+Logistic Regression,True,(arm A fixed settings),{'class_weight': 'balanced'},1,0
+Random Forest,True,max_depth,"[10, 20]",4,20
+Random Forest,True,min_samples_leaf,"[5, 20]",4,20
+Random Forest,True,class_weight,['balanced_subsample'],4,20
+Random Forest,True,(arm A fixed settings),"{'max_depth': 20, 'min_samples_leaf': 5, 'class_weight': 'balanced_subsample'}",1,0
+Gradient Boosting,True,learning_rate,"[0.05, 0.15]",4,20
+Gradient Boosting,True,max_depth,"[3, 5]",4,20
+Gradient Boosting,True,class_weight,['balanced'],4,20
+Gradient Boosting,True,(arm A fixed settings),"{'learning_rate': 0.1, 'max_depth': 3, 'class_weight': 'balanced'}",1,0
+Neural Network,True,hidden_layer_sizes,"[(64,), (64, 32)]",4,20
+Neural Network,True,alpha,"[0.0001, 0.01]",4,20
+Neural Network,True,(arm A fixed settings),"{'hidden_layer_sizes': (64,), 'alpha': 0.0001}",1,0
+Extra Trees (new),False,max_depth,"[10, 20]",4,20
+Extra Trees (new),False,min_samples_leaf,"[5, 20]",4,20
+Extra Trees (new),False,class_weight,['balanced_subsample'],4,20
+Extra Trees (new),False,(arm A fixed settings),"{'max_depth': 20, 'min_samples_leaf': 5, 'class_weight': 'balanced_subsample'}",1,0
+kNN (new),False,n_neighbors,"[15, 50]",4,20
+kNN (new),False,weights,"['uniform', 'distance']",4,20
+kNN (new),False,(arm A fixed settings),"{'n_neighbors': 25, 'weights': 'distance'}",1,0

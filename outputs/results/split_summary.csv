@@ -1,0 +1,8 @@
+split,rows,sites
+held-out TEST,8428,656
+development (total),33716,2622
+outer fold 1: train / validation,"26,974 / 6,742","2,097 / 525"
+outer fold 2: train / validation,"26,975 / 6,741","2,098 / 524"
+outer fold 3: train / validation,"26,976 / 6,740","2,093 / 529"
+outer fold 4: train / validation,"26,975 / 6,741","2,096 / 526"
+outer fold 5: train / validation,"26,964 / 6,752","2,104 / 518"

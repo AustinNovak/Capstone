@@ -1,0 +1,38 @@
+name: Python CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate project structure
+        run: |
+          test -f README.md
+          test -f requirements.txt
+          test -d src && test -d data && test -d notebooks
+
+      - name: Run tests (data split, pipeline, saved model)
+        run: PYTHONPATH=src pytest -q
+
+      - name: Smoke-test MLflow training on a small sample of sites
+        run: PYTHONPATH=src python src/train_mlflow.py --sample 150
+
+      - name: Upload MLflow run summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: mlflow-run-summary
+          path: outputs/mlflow_run_summary.csv

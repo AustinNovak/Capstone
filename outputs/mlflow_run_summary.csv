@@ -1,0 +1,9 @@
+model,features,macro_f1,accuracy,top3
+Logistic Regression,original7,0.02835,0.04402,0.12945
+Random Forest,original7,0.04906,0.07119,0.21773
+Gradient Boosting,original7,0.04428,0.0579,0.18237
+Neural Network,original7,0.03174,0.05233,0.14535
+Logistic Regression,expanded13,0.03587,0.05316,0.16315
+Random Forest,expanded13,0.05217,0.07511,0.23125
+Gradient Boosting,expanded13,0.04957,0.0649,0.20835
+Neural Network,expanded13,0.0389,0.06668,0.1915

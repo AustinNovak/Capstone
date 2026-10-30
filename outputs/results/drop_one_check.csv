@@ -1,0 +1,9 @@
+variant,macro_f1,accuracy,top3
+all expanded,0.0534,0.0748,0.2257
+without HUC,0.0525,0.0766,0.2257
+without alk,0.0522,0.075,0.2239
+without NO3,0.052,0.0739,0.2243
+without YEAR,0.0519,0.0742,0.2243
+without Temp,0.0513,0.0725,0.2223
+without LWSKM2,0.0489,0.0713,0.2175
+original 7 only,0.0458,0.0702,0.2141
