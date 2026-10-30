@@ -26,7 +26,7 @@ display(sdf.groupBy("GENUS").count().orderBy("count", ascending=False).limit(10)
 
 import runpy, sys
 sys.argv = ["train_mlflow.py", "--experiment", f"/Users/{spark.sql('select current_user()').first()[0]}/fish-genus-capstone"]
-runpy.run_path("src/train_mlflow.py", run_name="__main__")
+_ = runpy.run_path("src/train_mlflow.py", run_name="__main__")   # "_ =" stops the notebook printing the module globals
 
 # COMMAND ----------
 
