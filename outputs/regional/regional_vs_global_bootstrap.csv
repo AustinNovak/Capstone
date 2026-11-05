@@ -1,0 +1,73 @@
+model,scope,comparison,metric,diff,ci_low,ci_high,excludes_zero
+Random Forest,All regions pooled,region-best model vs one global expanded model,macro_f1,-0.00088,-0.00549,0.00379,False
+Random Forest,All regions pooled,region-best model vs one global expanded model,top3,-0.03613,-0.04426,-0.0272,True
+Random Forest,All regions pooled,"region model vs global model, both original 7",macro_f1,-0.00454,-0.00929,-0.00012,True
+Random Forest,All regions pooled,"region model vs global model, both original 7",top3,-0.03235,-0.04163,-0.02246,True
+Random Forest,Pennsylvania,region-best model vs one global expanded model,macro_f1,0.01134,0.00408,0.01739,True
+Random Forest,Pennsylvania,region-best model vs one global expanded model,top3,-0.03622,-0.04942,-0.02371,True
+Random Forest,Pennsylvania,"region model vs global model, both original 7",macro_f1,0.01311,0.00638,0.01985,True
+Random Forest,Pennsylvania,"region model vs global model, both original 7",top3,-0.03832,-0.05015,-0.02485,True
+Random Forest,Ohio,region-best model vs one global expanded model,macro_f1,0.00718,0.00087,0.01403,True
+Random Forest,Ohio,region-best model vs one global expanded model,top3,-0.01451,-0.02727,-0.00135,True
+Random Forest,Ohio,"region model vs global model, both original 7",macro_f1,0.00115,-0.00495,0.00784,False
+Random Forest,Ohio,"region model vs global model, both original 7",top3,-0.00939,-0.02658,0.00526,False
+Random Forest,Kentucky,region-best model vs one global expanded model,macro_f1,7e-05,-0.00799,0.00758,False
+Random Forest,Kentucky,region-best model vs one global expanded model,top3,-0.05445,-0.08861,-0.02814,True
+Random Forest,Kentucky,"region model vs global model, both original 7",macro_f1,0.00013,-0.0066,0.00779,False
+Random Forest,Kentucky,"region model vs global model, both original 7",top3,-0.05443,-0.0784,-0.03308,True
+Random Forest,West Virginia,region-best model vs one global expanded model,macro_f1,-0.00386,-0.0135,0.00597,False
+Random Forest,West Virginia,region-best model vs one global expanded model,top3,-0.08392,-0.11986,-0.05049,True
+Random Forest,West Virginia,"region model vs global model, both original 7",macro_f1,-0.00127,-0.00898,0.00686,False
+Random Forest,West Virginia,"region model vs global model, both original 7",top3,-0.05943,-0.08654,-0.03318,True
+Random Forest,VA-MD-NJ,region-best model vs one global expanded model,macro_f1,-0.01449,-0.0281,-0.00312,True
+Random Forest,VA-MD-NJ,region-best model vs one global expanded model,top3,-0.04953,-0.0946,-0.00414,True
+Random Forest,VA-MD-NJ,"region model vs global model, both original 7",macro_f1,-0.00777,-0.01553,-0.00027,True
+Random Forest,VA-MD-NJ,"region model vs global model, both original 7",top3,-0.04383,-0.09214,-0.00397,True
+Extra Trees (new),All regions pooled,region-best model vs one global expanded model,macro_f1,-0.00242,-0.0064,0.00234,False
+Extra Trees (new),All regions pooled,region-best model vs one global expanded model,top3,-0.02605,-0.03435,-0.01898,True
+Extra Trees (new),All regions pooled,"region model vs global model, both original 7",macro_f1,-0.00482,-0.00827,-0.0011,True
+Extra Trees (new),All regions pooled,"region model vs global model, both original 7",top3,-0.02725,-0.03413,-0.02074,True
+Extra Trees (new),Pennsylvania,region-best model vs one global expanded model,macro_f1,0.00789,0.00134,0.01479,True
+Extra Trees (new),Pennsylvania,region-best model vs one global expanded model,top3,-0.02652,-0.03987,-0.01419,True
+Extra Trees (new),Pennsylvania,"region model vs global model, both original 7",macro_f1,0.01516,0.00955,0.02237,True
+Extra Trees (new),Pennsylvania,"region model vs global model, both original 7",top3,-0.03666,-0.04809,-0.0245,True
+Extra Trees (new),Ohio,region-best model vs one global expanded model,macro_f1,0.00728,0.00062,0.01266,True
+Extra Trees (new),Ohio,region-best model vs one global expanded model,top3,-0.00413,-0.01731,0.01025,False
+Extra Trees (new),Ohio,"region model vs global model, both original 7",macro_f1,-0.00092,-0.00596,0.00427,False
+Extra Trees (new),Ohio,"region model vs global model, both original 7",top3,-0.01111,-0.02301,-0.00109,True
+Extra Trees (new),Kentucky,region-best model vs one global expanded model,macro_f1,0.00145,-0.0051,0.00839,False
+Extra Trees (new),Kentucky,region-best model vs one global expanded model,top3,-0.03607,-0.06503,-0.00917,True
+Extra Trees (new),Kentucky,"region model vs global model, both original 7",macro_f1,-0.00041,-0.00786,0.00698,False
+Extra Trees (new),Kentucky,"region model vs global model, both original 7",top3,-0.0246,-0.05813,0.00691,False
+Extra Trees (new),West Virginia,region-best model vs one global expanded model,macro_f1,0.0027,-0.00906,0.01337,False
+Extra Trees (new),West Virginia,region-best model vs one global expanded model,top3,-0.06604,-0.10046,-0.03702,True
+Extra Trees (new),West Virginia,"region model vs global model, both original 7",macro_f1,0.00225,-0.00638,0.01177,False
+Extra Trees (new),West Virginia,"region model vs global model, both original 7",top3,-0.04325,-0.06238,-0.02485,True
+Extra Trees (new),VA-MD-NJ,region-best model vs one global expanded model,macro_f1,-0.01398,-0.0238,-0.00319,True
+Extra Trees (new),VA-MD-NJ,region-best model vs one global expanded model,top3,-0.06926,-0.12151,-0.02429,True
+Extra Trees (new),VA-MD-NJ,"region model vs global model, both original 7",macro_f1,-0.00758,-0.01903,0.00522,False
+Extra Trees (new),VA-MD-NJ,"region model vs global model, both original 7",top3,-0.03092,-0.07889,0.02598,False
+Gradient Boosting,All regions pooled,region-best model vs one global expanded model,macro_f1,-0.00476,-0.01027,0.00096,False
+Gradient Boosting,All regions pooled,region-best model vs one global expanded model,top3,-0.02785,-0.03993,-0.01792,True
+Gradient Boosting,All regions pooled,"region model vs global model, both original 7",macro_f1,-0.00246,-0.00721,0.00297,False
+Gradient Boosting,All regions pooled,"region model vs global model, both original 7",top3,-0.01348,-0.02223,-0.00463,True
+Gradient Boosting,Pennsylvania,region-best model vs one global expanded model,macro_f1,0.01525,0.00936,0.02263,True
+Gradient Boosting,Pennsylvania,region-best model vs one global expanded model,top3,-0.03717,-0.04924,-0.02402,True
+Gradient Boosting,Pennsylvania,"region model vs global model, both original 7",macro_f1,0.01558,0.00795,0.02359,True
+Gradient Boosting,Pennsylvania,"region model vs global model, both original 7",top3,-0.04646,-0.06146,-0.03254,True
+Gradient Boosting,Ohio,region-best model vs one global expanded model,macro_f1,0.00157,-0.00476,0.00843,False
+Gradient Boosting,Ohio,region-best model vs one global expanded model,top3,-0.00139,-0.01448,0.0151,False
+Gradient Boosting,Ohio,"region model vs global model, both original 7",macro_f1,0.00112,-0.00477,0.0076,False
+Gradient Boosting,Ohio,"region model vs global model, both original 7",top3,0.02519,0.01054,0.04033,True
+Gradient Boosting,Kentucky,region-best model vs one global expanded model,macro_f1,0.00425,-0.00545,0.01428,False
+Gradient Boosting,Kentucky,region-best model vs one global expanded model,top3,-0.0282,-0.05963,0.00525,False
+Gradient Boosting,Kentucky,"region model vs global model, both original 7",macro_f1,0.00903,0.00081,0.01889,True
+Gradient Boosting,Kentucky,"region model vs global model, both original 7",top3,0.0103,-0.02677,0.04672,False
+Gradient Boosting,West Virginia,region-best model vs one global expanded model,macro_f1,-0.01924,-0.03525,-0.00181,True
+Gradient Boosting,West Virginia,region-best model vs one global expanded model,top3,-0.078,-0.10909,-0.04414,True
+Gradient Boosting,West Virginia,"region model vs global model, both original 7",macro_f1,-0.00318,-0.01297,0.00736,False
+Gradient Boosting,West Virginia,"region model vs global model, both original 7",top3,-0.02369,-0.0522,-0.00089,True
+Gradient Boosting,VA-MD-NJ,region-best model vs one global expanded model,macro_f1,-0.00329,-0.01462,0.0073,False
+Gradient Boosting,VA-MD-NJ,region-best model vs one global expanded model,top3,0.00907,-0.05775,0.08974,False
+Gradient Boosting,VA-MD-NJ,"region model vs global model, both original 7",macro_f1,-0.00158,-0.01449,0.01068,False
+Gradient Boosting,VA-MD-NJ,"region model vs global model, both original 7",top3,-0.03073,-0.10685,0.04159,False

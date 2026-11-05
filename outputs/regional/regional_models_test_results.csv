@@ -1,0 +1,61 @@
+region,model,arm,n_features,selected_hyperparameters,best_gridsearch_cv_macro_f1,test_macro_f1,test_accuracy,test_top3
+Pennsylvania,Random Forest,"R7: region data, original 7",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.0611,0.05357,0.09104,0.27624
+Pennsylvania,Random Forest,"RB: region data, region-best features",9,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.06178,0.05861,0.09701,0.2825
+Pennsylvania,Extra Trees (new),"R7: region data, original 7",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.04882,0.05691,0.08962,0.25405
+Pennsylvania,Extra Trees (new),"RB: region data, region-best features",9,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.05279,0.05106,0.08848,0.27425
+Pennsylvania,Gradient Boosting,"R7: region data, original 7",6,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.05182,0.05358,0.07568,0.21821
+Pennsylvania,Gradient Boosting,"RB: region data, region-best features",9,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.05924,0.05709,0.08421,0.24865
+Pennsylvania,Random Forest,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.04075,0.1101,0.31494
+Pennsylvania,Random Forest,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.04736,0.11238,0.31892
+Pennsylvania,Extra Trees (new),"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.04057,0.10213,0.29047
+Pennsylvania,Extra Trees (new),"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.04324,0.10583,0.30071
+Pennsylvania,Gradient Boosting,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.03889,0.08876,0.26486
+Pennsylvania,Gradient Boosting,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.04114,0.0973,0.28535
+Ohio,Random Forest,"R7: region data, original 7",5,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.02298,0.02864,0.03365,0.10852
+Ohio,Random Forest,"RB: region data, region-best features",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.0286,0.03714,0.03777,0.12328
+Ohio,Extra Trees (new),"R7: region data, original 7",5,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.02307,0.02216,0.02438,0.0886
+Ohio,Extra Trees (new),"RB: region data, region-best features",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.02639,0.03034,0.02988,0.10817
+Ohio,Gradient Boosting,"R7: region data, original 7",5,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.02383,0.02717,0.03194,0.11641
+Ohio,Gradient Boosting,"RB: region data, region-best features",6,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.02742,0.03008,0.03365,0.12157
+Ohio,Random Forest,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02781,0.03297,0.11813
+Ohio,Random Forest,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.03063,0.03468,0.13702
+Ohio,Extra Trees (new),"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02433,0.02885,0.10027
+Ohio,Extra Trees (new),"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.02188,0.02885,0.11195
+Ohio,Gradient Boosting,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02734,0.02988,0.09135
+Ohio,Gradient Boosting,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.02979,0.02919,0.1226
+Kentucky,Random Forest,"R7: region data, original 7",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.03037,0.02176,0.04828,0.1385
+Kentucky,Random Forest,"RB: region data, region-best features",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.02857,0.02667,0.0521,0.16391
+Kentucky,Extra Trees (new),"R7: region data, original 7",6,"{'class_weight': 'balanced_subsample', 'max_depth': 10, 'min_samples_leaf': 5}",0.02304,0.02214,0.03558,0.12071
+Kentucky,Extra Trees (new),"RB: region data, region-best features",7,"{'class_weight': 'balanced_subsample', 'max_depth': 10, 'min_samples_leaf': 5}",0.02758,0.02349,0.04193,0.12706
+Kentucky,Gradient Boosting,"R7: region data, original 7",6,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.02816,0.02919,0.05718,0.17789
+Kentucky,Gradient Boosting,"RB: region data, region-best features",7,"{'class_weight': 'balanced', 'learning_rate': 0.05, 'max_depth': 5}",0.02981,0.02472,0.04066,0.1474
+Kentucky,Random Forest,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02332,0.05083,0.19187
+Kentucky,Random Forest,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.02634,0.05337,0.21855
+Kentucky,Extra Trees (new),"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02284,0.04701,0.1474
+Kentucky,Extra Trees (new),"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.02193,0.05337,0.16518
+Kentucky,Gradient Boosting,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02082,0.03812,0.16518
+Kentucky,Gradient Boosting,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.0206,0.04574,0.17535
+West Virginia,Random Forest,"R7: region data, original 7",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.01834,0.03348,0.03671,0.1379
+West Virginia,Random Forest,"RB: region data, region-best features",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.01834,0.03348,0.03671,0.1379
+West Virginia,Extra Trees (new),"R7: region data, original 7",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.0197,0.02555,0.03175,0.10813
+West Virginia,Extra Trees (new),"RB: region data, region-best features",6,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.0197,0.02555,0.03175,0.10813
+West Virginia,Gradient Boosting,"R7: region data, original 7",6,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 3}",0.02,0.02362,0.0377,0.14583
+West Virginia,Gradient Boosting,"RB: region data, region-best features",6,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 3}",0.02,0.02362,0.0377,0.14583
+West Virginia,Random Forest,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.03093,0.06349,0.19643
+West Virginia,Random Forest,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.03321,0.07937,0.22123
+West Virginia,Extra Trees (new),"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02141,0.0496,0.15079
+West Virginia,Extra Trees (new),"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.02309,0.04464,0.1756
+West Virginia,Gradient Boosting,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02858,0.04762,0.17163
+West Virginia,Gradient Boosting,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.04659,0.07242,0.22421
+VA-MD-NJ,Random Forest,"R7: region data, original 7",7,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 5}",0.01623,0.01586,0.04369,0.12621
+VA-MD-NJ,Random Forest,"RB: region data, region-best features",8,"{'class_weight': 'balanced_subsample', 'max_depth': 20, 'min_samples_leaf': 20}",0.0153,0.01673,0.04369,0.1165
+VA-MD-NJ,Extra Trees (new),"R7: region data, original 7",7,"{'class_weight': 'balanced_subsample', 'max_depth': 10, 'min_samples_leaf': 5}",0.01101,0.01526,0.03883,0.13592
+VA-MD-NJ,Extra Trees (new),"RB: region data, region-best features",8,"{'class_weight': 'balanced_subsample', 'max_depth': 10, 'min_samples_leaf': 20}",0.01191,0.01147,0.03398,0.09709
+VA-MD-NJ,Gradient Boosting,"R7: region data, original 7",7,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.02517,0.0206,0.03883,0.15049
+VA-MD-NJ,Gradient Boosting,"RB: region data, region-best features",8,"{'class_weight': 'balanced', 'learning_rate': 0.15, 'max_depth': 5}",0.02206,0.01178,0.03398,0.16505
+VA-MD-NJ,Random Forest,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02432,0.06311,0.1699
+VA-MD-NJ,Random Forest,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.03356,0.07282,0.16505
+VA-MD-NJ,Extra Trees (new),"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02474,0.06311,0.16505
+VA-MD-NJ,Extra Trees (new),"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.02552,0.06796,0.16019
+VA-MD-NJ,Gradient Boosting,"G7: one global model, original 7",7,"(global model, trained on all development sites)",,0.02031,0.0534,0.17961
+VA-MD-NJ,Gradient Boosting,"GC: one global model, expanded 13",13,"(global model, trained on all development sites)",,0.01482,0.0534,0.15534

@@ -61,3 +61,7 @@ See the table above and `outputs/results/`. Tuning alone changed macro-F1 by abo
 - Add land-use, elevation and stream-order predictors (EPA StreamCat / NHDPlus) and predict a ranked list of likely genera per site.
 - Scale: Spark reads and distributes the data; `GridSearchCV` can be parallelised with Spark/Joblib; MLflow Model Registry for versions and stage promotion; Databricks Jobs for scheduled retraining; serve the registered model as a REST endpoint.
 - Add DVC for data versioning and a drift check on incoming data.
+
+## Added after feedback
+- SHAP beeswarm plots: outputs/shap/
+- Region-wise models (feature availability by state, regional vs global, bootstrap): outputs/regional/, code in src/extra/
