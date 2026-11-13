@@ -65,3 +65,5 @@ See the table above and `outputs/results/`. Tuning alone changed macro-F1 by abo
 ## Added after feedback
 - SHAP beeswarm plots: outputs/shap/
 - Region-wise models (feature availability by state, regional vs global, bootstrap): outputs/regional/, code in src/extra/
+
+- Final-paper figures: outputs/final_confusion_recall.png, outputs/eda_genus_state.png (scripts src/extra/cm.py, eda.py); frequency baselines in src/extra/base.py
